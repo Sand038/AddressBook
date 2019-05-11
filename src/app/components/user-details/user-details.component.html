@@ -1,0 +1,9 @@
+User Name : <input type="text" [(ngModel)]="userName">
+<button (click)="searchUser()">Search</button>
+
+<div *ngIf="response">
+  <p>Id : {{response.id}}</p>
+  <p>Login : {{response.login}}</p>
+  <p>Avatar : {{response.avatar_url}}</p>
+  <p>User Type : {{response.type}}</p>
+</div>
