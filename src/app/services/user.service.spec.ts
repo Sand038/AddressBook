@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AddressCardService } from './address-card.service';
+import { UserService } from './user.service';
 
-describe('AddressCardService', () => {
+describe('UserService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: AddressCardService = TestBed.get(AddressCardService);
+    const service: UserService = TestBed.get(UserService);
     expect(service).toBeTruthy();
   });
 });

@@ -1,6 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import {AddressCardService} from '../services/address-card.service';
-import {HttpClient} from '@angular/common/http';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
