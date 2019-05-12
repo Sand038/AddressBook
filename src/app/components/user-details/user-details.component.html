@@ -1,9 +1,17 @@
-User Name : <input type="text" [(ngModel)]="userName">
-<button (click)="searchUser()">Search</button>
-
-<div *ngIf="response">
-  <p>Id : {{response.id}}</p>
-  <p>Login : {{response.login}}</p>
-  <p>Avatar : {{response.avatar_url}}</p>
-  <p>User Type : {{response.type}}</p>
+<div class="container-fluid">
+  <div class="row">
+    User Name : <input type="text" [(ngModel)]="userName">
+    <button (click)="searchUser()">Search</button>
+  </div>
+  <div class="row" *ngIf="response">
+    <div class="col">
+      <p>Id : {{response.id}}</p>
+      <p>Login : {{response.login}}</p>
+      <p>Avatar : {{response.avatar_url}}</p>
+      <p>User Type : {{response.type}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <button routerLink="">Back to home</button>
+  </div>
 </div>

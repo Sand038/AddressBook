@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    <button routerLink="">Back to home</button>
+  </div>
+  <div *ngIf="response" class="row">
+    <div class="col">
+      <div *ngFor="let item of response">
+        <app-user-card [user]="item"></app-user-card>
+      </div>
+    </div>
+  </div>
+</div>
